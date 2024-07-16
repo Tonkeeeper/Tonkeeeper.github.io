@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "Tonkeeper",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#10161f"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/tonkeeper_1.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://Tonkeeeper.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://Tonkeeeper.github.io/sitemap.xml",
+    "mbrsiteDomain": "wvlm5wfbtb",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Tonkeeper™ | Home Official Site",
+        "meta_descr": "Tonkeeper is the easiest self-custody wallet to pay toncoin and other tokens. Ton has low blockchain fees and fast transactions. Receive TON and other tokens in one place.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/tonkeeper.png\" alt=\"tonkeeper\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uiGcc2ONoK",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#edefeb",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#10161f\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#10161f\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Tonkeeper - The Crypto Wallet That's Transforming Digital Asset Management</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the rapidly evolving world of cryptocurrency, the need for secure and user-friendly digital wallets has never been more pressing. As more individuals and businesses adopt cryptocurrencies and non-fungible tokens (NFTs) as part of their financial strategies, the demand for intuitive wallet solutions has skyrocketed. Enter <a href=\"https://tonkeeeper.github.io/\" class=\"text-primary\">Tonkeeper</a>, a cryptocurrency wallet that has emerged as a game-changer in the digital asset management space.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Tonkeeper: A Brief History</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://tonkeeper.com/\" class=\"text-primary\">Tonkeeper</a> was founded in 2019 by a team of blockchain enthusiasts and financial technology experts who recognized the growing need for a wallet that could seamlessly manage a wide range of digital assets. Drawing on their extensive experience in the crypto industry, the founders set out to create a platform that would revolutionize the way people interact with and store their cryptocurrencies and NFTs.<br><br>At the time of its launch, Tonkeeper stood out from the crowd of existing crypto wallets by offering a unique combination of security, versatility, and user-friendliness. Unlike many traditional wallets that were often criticized for their complex interfaces and steep learning curves, Tonkeeper prioritized simplicity and intuitiveness, making it accessible to both seasoned crypto veterans and newcomers to the digital asset space.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Rise of Tonkeeper</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the years following its inception, Tonkeeper has experienced remarkable growth and widespread adoption, becoming one of the most trusted and widely-used crypto wallets in the market. This success can be attributed to the wallet's robust feature set, innovative security measures, and the team's unwavering commitment to continually enhancing the user experience.<br><br>One of the key factors behind Tonkeeper's rise to prominence is its support for a diverse array of digital assets. Unlike many wallets that focus solely on Bitcoin or Ethereum, Tonkeeper allows users to store, manage, and transact a wide range of cryptocurrencies, including popular options like Bitcoin, Ethereum, Litecoin, and Ripple, as well as a growing number of emerging altcoins and lesser-known projects.<br><br>This broad asset support, combined with Tonkeeper's seamless integration with various decentralized exchanges and DeFi protocols, has made the wallet a go-to solution for crypto enthusiasts and investors who value the ability to manage their entire digital portfolio from a single, intuitive platform.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Security and Privacy at the Forefront</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In an era where cybersecurity threats and hacking incidents have become all too common in the cryptocurrency space, Tonkeeper has placed a strong emphasis on ensuring the safety and privacy of its users' digital assets. The wallet employs a multi-layered security approach, including advanced encryption, biometric authentication, and hardware wallet integration, to provide an unparalleled level of protection for its users' funds.<br><br>One of the standout security features of Tonkeeper is its use of hierarchical deterministic (HD) wallets. This technology allows users to generate an unlimited number of unique, secure wallet addresses from a single seed phrase, reducing the risk of address reuse and enhancing the overall privacy of their transactions.<br><br>Additionally, Tonkeeper has implemented robust access control mechanisms, including support for multi-signature transactions and the ability to set spending limits on individual wallets. These features ensure that users maintain complete control over their digital assets, even in the event of a compromised device or unauthorized access attempt.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Tonkeeper Mobile App: Convenience and Mobility</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">While Tonkeeper initially launched as a desktop-based platform, the team quickly recognized the growing demand for mobile-friendly crypto wallet solutions. In response, they developed a state-of-the-art mobile app that has become one of the most popular and widely-used crypto wallets on both iOS and Android devices.<br><br>The Tonkeeper mobile app seamlessly syncs with the desktop platform, allowing users to access and manage their digital assets from anywhere, at any time. The app's intuitive interface, coupled with features like biometric authentication, push notifications, and the ability to initiate transactions on-the-go, have made it a go-to choice for individuals who value the convenience and flexibility of mobile-based crypto management.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Decentralized Finance (DeFi) Integration</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As the decentralized finance (DeFi) ecosystem has continued to flourish, Tonkeeper has positioned itself as a leading platform for managing and interacting with a wide range of DeFi protocols and applications. The wallet's deep integration with popular DeFi platforms, such as Uniswap, Compound, and Aave, allows users to easily access and utilize a variety of DeFi services, including lending, borrowing, and yield farming, all from within the Tonkeeper interface.<br><br>This seamless DeFi integration has been a game-changer for Tonkeeper users, enabling them to streamline their digital asset management and optimize their exposure to the rapidly evolving DeFi landscape. By providing a single, unified platform for managing both their cryptocurrency holdings and their DeFi activities, Tonkeeper has become an indispensable tool for savvy crypto investors and decentralized finance enthusiasts.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Non-Fungible Tokens (NFTs) and Tonkeeper</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In addition to its robust support for cryptocurrencies and DeFi applications, Tonkeeper has also emerged as a leading platform for managing non-fungible tokens (NFTs). As the NFT market has exploded in recent years, with a wide range of digital artworks, collectibles, and in-game assets being tokenized on the blockchain, the need for a user-friendly wallet solution to store and interact with these unique digital assets has become increasingly crucial.<br><br>Tonkeeper's NFT management features, which include the ability to view, transfer, and even display NFTs directly within the wallet interface, have made it a go-to choice for both NFT collectors and creators. The wallet's integration with leading NFT marketplaces, such as OpenSea and Rarible, further enhances the user experience, allowing seamless navigation between the Tonkeeper platform and the broader NFT ecosystem.<br><br>Moreover, Tonkeeper's support for advanced features like multi-signature wallets and custom token standards has made it a popular choice for NFT projects and communities that require a high degree of security and flexibility in managing their digital assets.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Tonkeeper Ecosystem and Partnerships</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As Tonkeeper has grown in popularity and influence within the cryptocurrency and blockchain space, the platform has forged a number of strategic partnerships and integrations that have further enhanced its ecosystem and value proposition.<br><br>One such partnership is with leading decentralized exchange (DEX) aggregator, 1inch Network. Through this integration, Tonkeeper users can access the vast liquidity and trading capabilities of the 1inch platform directly from within the Tonkeeper interface, enabling them to execute trades, swap tokens, and participate in yield farming activities with ease.<br><br>Additionally, Tonkeeper has collaborated with various blockchain-based game and metaverse projects, allowing users to seamlessly manage their in-game assets, avatars, and virtual land parcels directly from the Tonkeeper wallet. This integration has been particularly valuable for gamers and metaverse enthusiasts who require a secure and user-friendly solution for managing their growing digital portfolios.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Looking Ahead: The Future of Tonkeeper</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  As the cryptocurrency and blockchain industries continue to evolve and expand, Tonkeeper remains committed to staying at the forefront of digital asset management. The team behind the wallet has consistently demonstrated its dedication to innovation, regularly introducing new features and enhancements to enhance the user experience and address the changing needs of the crypto community.\n                </p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Some of the key areas of focus for Tonkeeper's future development include:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1.Increased Multi-Chain Support:</b> With the rise of layer-1 blockchain networks, such as Solana, Avalanche, and Polkadot, Tonkeeper plans to expand its asset support to include a wider range of cryptocurrencies and tokens from these emerging ecosystems.<br><br><b>2.Advanced DeFi Integrations:</b> Tonkeeper aims to deepen its integration with the DeFi space, providing users with seamless access to a broader array of decentralized lending, borrowing, and yield farming protocols.<br><br><b>3.Expanded NFT Functionality:</b> The team is committed to enhancing Tonkeeper's NFT management capabilities, including the addition of features like NFT minting, fractional ownership, and metaverse integration.<br><br><b>4.Enhanced Mobile Experience:</b> Recognizing the growing importance of mobile-based crypto management, Tonkeeper will continue to invest in the development of its mobile app, introducing new features and optimizations to provide users with a best-in-class mobile experience.<br><br><b>5.Institutional-Grade Security:</b> As the adoption of cryptocurrencies and digital assets continues to grow among businesses and enterprises, Tonkeeper plans to introduce enterprise-level security features, such as advanced multi-signature capabilities and customizable access control policies, to cater to the needs of institutional investors and corporate clients.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving world of cryptocurrency and blockchain technology, Tonkeeper has emerged as a standout solution for managing digital assets and navigating the increasingly complex landscape of decentralized finance and non-fungible tokens. With its focus on security, user experience, and continuous innovation, Tonkeeper has established itself as a leading crypto wallet that is transforming the way individuals and organizations interact with and manage their digital wealth.<br><br>As the adoption of cryptocurrencies and blockchain-based applications continues to grow, Tonkeeper's role as a trusted and versatile digital asset management platform will only become more crucial. With its unwavering commitment to empowering users and driving the broader adoption of blockchain technology, Tonkeeper is poised to play a pivotal role in shaping the future of the crypto ecosystem.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uiGccimg6P",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
